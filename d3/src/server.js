@@ -11,6 +11,7 @@ const logger = (req, res, next) => {
     next();
 };
 
+
 const validator = (req, res, next) => {
     if (req.body.name) {
         next();

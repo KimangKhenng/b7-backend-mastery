@@ -1,7 +1,10 @@
 import express from 'express';
+import { logger } from '../middlewares/index.js';
 const userRouter = express.Router();
 
 // All routes start with /api/users
+
+userRouter.use(logger)
 
 // GET /api/users
 userRouter.get('/', (req, res) => {
