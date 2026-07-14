@@ -1,0 +1,28 @@
+{
+  "name": "w12d1",
+  "version": "1.0.0",
+  "description": "",
+  "license": "ISC",
+  "author": "",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon -L src/server.js",
+    "generate": "node src/utils/fixture.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1",
+    "express-async-handler": "^1.2.0",
+    "express-rate-limit": "^8.5.2",
+    "mongodb": "^7.3.0",
+    "mongoose": "^9.7.2",
+    "mongoose-paginate-v2": "^1.9.5",
+    "morgan": "^1.11.0"
+  },
+  "devDependencies": {
+    "@faker-js/faker": "^10.5.0",
+    "nodemon": "^3.1.14"
+  }
+}
